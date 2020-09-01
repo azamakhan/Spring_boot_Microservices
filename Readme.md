@@ -10,7 +10,6 @@ The following has been implemented in this project:
 * Implemented dynamic scaling using Eureka Naming Server and Ribbon.
 * Implemented API Gateway with Zuul.
 * Implemented Distributed tracing with Spring Cloud Sleuth and Zipkin.
-* Implemented Fault Tolerance with Zipkin.
 
 ## How to use:
 1. Download the project
