@@ -12,8 +12,6 @@ The following has been implemented in this project:
 * Implemented Distributed tracing with Spring Cloud Sleuth and Zipkin.
 * Implemented Fault Tolerance with Zipkin.
 
-***
-
 ## How to use:
 1. Download the project
 
@@ -29,7 +27,6 @@ The following has been implemented in this project:
   http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/7500 and
   http://localhost:8765/currency-conversion-service/currency-converter-feign/from/EUR/to/INR/quantity/100
 
-***
 
 ## Ports
 | Application |Port|
@@ -40,8 +37,6 @@ The following has been implemented in this project:
 | Currency Conversion Service | 8100, 8101 |
 | Zipkin Distributed Tracing Server| 9411 |
 | H2 Database | 8000 |
-
-***
 
 ## URLs
 | Application | URL |
