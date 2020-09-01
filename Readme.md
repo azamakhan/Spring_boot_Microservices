@@ -56,7 +56,7 @@ The following has been implemented in this project:
 * Visit Quick Start Page:
   https://zipkin.io/pages/quickstart
 
-* Downloading Zipkin Jar
+* Downloading Zipkin Jar:
   https://search.maven.org/remote_content?g=io.zipkin.java&a=zipkin-server&v=LATEST&c=exec
 
 * Command to run:
@@ -64,13 +64,9 @@ The following has been implemented in this project:
   java -jar zipkin-server-2.12.9-exec.jar 
 
 * If needed, currency-exchange-service uses data.sql file to load exchange values into H2 database.
-Uses the following query to insert the values:
+Change the following queries to your need to insert the values in the table:
 ```sql
-insert into exchange_value values(101, 75, 'USD', 0, 'INR');
-
-insert into exchange_value values(102, 90, 'EUR', 0, 'INR');
-
-insert into exchange_value values(103, 20, 'INR', 0, 'YEN');
+insert into exchange_value values(104, 1.19, 'EUR', 0, 'USD');
 ```
 
 ---
