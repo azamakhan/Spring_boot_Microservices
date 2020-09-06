@@ -45,7 +45,7 @@ The following has been implemented in this project:
 | Currency Exchange Service |	http://localhost:8000/currency-exchange/from/EUR/to/INR http://localhost:8001/currency-exchange/from/USD/to/INR |
 | Currency Conversion Service | http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/10000 |
 | Zipkin Distributed Tracing Server | 	http://localhost:9411/zipkin/ |
-| H2 Database | http://localhost:8000/h2 |
+| H2 Database | http://localhost:8000/h2-console |
 
 ***
 
