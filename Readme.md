@@ -10,9 +10,6 @@ The following has been implemented in this project:
 * Implemented dynamic scaling using Eureka Naming Server and Ribbon.
 * Implemented API Gateway with Zuul.
 * Implemented Distributed tracing with Spring Cloud Sleuth and Zipkin.
-* Implemented Fault Tolerance with Zipkin.
-
-***
 
 ## How to use:
 1. Download the project
@@ -29,7 +26,6 @@ The following has been implemented in this project:
   http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/7500 and
   http://localhost:8765/currency-conversion-service/currency-converter-feign/from/EUR/to/INR/quantity/100
 
-***
 
 ## Ports
 | Application |Port|
@@ -41,8 +37,6 @@ The following has been implemented in this project:
 | Zipkin Distributed Tracing Server| 9411 |
 | H2 Database | 8000 |
 
-***
-
 ## URLs
 | Application | URL |
 |---|---|
@@ -51,7 +45,7 @@ The following has been implemented in this project:
 | Currency Exchange Service |	http://localhost:8000/currency-exchange/from/EUR/to/INR http://localhost:8001/currency-exchange/from/USD/to/INR |
 | Currency Conversion Service | http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/10000 |
 | Zipkin Distributed Tracing Server | 	http://localhost:9411/zipkin/ |
-| H2 Database | http://localhost:8000/h2 |
+| H2 Database | http://localhost:8000/h2-console |
 
 ***
 
@@ -61,7 +55,7 @@ The following has been implemented in this project:
 * Visit Quick Start Page:
   https://zipkin.io/pages/quickstart
 
-* Downloading Zipkin Jar
+* Downloading Zipkin Jar:
   https://search.maven.org/remote_content?g=io.zipkin.java&a=zipkin-server&v=LATEST&c=exec
 
 * Command to run:
@@ -69,13 +63,9 @@ The following has been implemented in this project:
   java -jar zipkin-server-2.12.9-exec.jar 
 
 * If needed, currency-exchange-service uses data.sql file to load exchange values into H2 database.
-Uses the following query to insert the values:
+Change the following queries to your need to insert the values in the table:
 ```sql
-insert into exchange_value values(101, 75, 'USD', 0, 'INR');
-
-insert into exchange_value values(102, 90, 'EUR', 0, 'INR');
-
-insert into exchange_value values(103, 20, 'INR', 0, 'YEN');
+insert into exchange_value values(104, 1.19, 'EUR', 0, 'USD');
 ```
 
 ---
