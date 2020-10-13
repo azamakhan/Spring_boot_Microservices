@@ -31,7 +31,7 @@ The following has been implemented in this project:
 | Application |Port|
 |---|---|
 | Netflix Eureka Name Server | 8761 |
-| Netflix Zuul API Gateway Server | 8761 |
+| Netflix Zuul API Gateway Server | 8765 |
 | Currency Exchange Service | 8000, 8001, ... |
 | Currency Conversion Service | 8100, 8101 |
 | Zipkin Distributed Tracing Server| 9411 |
